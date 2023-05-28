@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+   
+    <link rel="shortcut icon" href="Imagenes/icono.png" type="image">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200&display=swap" rel="stylesheet">
+
+
+    <title>Encriptador de texto</title>
+</head>
+
+<body bgcolor="#F3F5FC"> 
+
+    <header>
+        <h1><img src="Imagenes/Logo.png" alt="Logo de Alura Latam" class="logo"></h1>
+    </header>
+
+    <main>
+
+        <section>
+            <textarea cols="30" rows="10" class="Text" placeholder="Ingrese el texto aquí"></textarea>
+
+             <div>
+                
+                <img src="Imagenes/Vector.png" alt="" class="vector">
+                <h6 class="info">Solo letras minúsculas y sin acentos</h6>
+            </div>
+
+            <div class="btns">
+                <button class="btn-encrip" onclick="btnEncriptar()">Encriptar</button>
+                <button class="btn-desencrip" onclick="btnDesencriptar()">Desencriptar</button>
+            </div>
+      </section>
+
+        <section>
+            
+                <textarea cols="20" rows="10" class="mensaje-result"></textarea>
+               <!--  <img src="Imagenes/Muñeco.png" alt="" class="muneco"> -->
+                <div>
+                    <button class="copiar" onclick="copiar()">Copiar</button>
+                </div>
+                
+            
+        </section>
+
+    </main>
+
+    <script src="encriptador.js"></script>
+    
+    
+</body>
+</html>

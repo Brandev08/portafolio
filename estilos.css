@@ -1,0 +1,266 @@
+
+.logo
+{
+    position: absolute;
+    width: 8%;
+    margin: 20px 35px;
+
+}
+
+main{
+    display: flex;
+    margin-bottom: 50px;
+    margin-left: 50px;
+}
+
+.Text
+{
+    display: flex;
+    position: absolute;
+    width: 50%;
+    height: 60%;
+    margin: 3em 5em 20px;
+    padding: 10px 25px;
+
+    border: none;
+    color: #0A3871;
+    background-color: transparent;
+    text-transform: lowercase;
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight:bold;
+    font-size: 30px;
+
+}
+
+::placeholder{
+    color:#0A3871;
+    text-transform:initial;
+}
+
+.text:focus{
+    outline: none;
+}
+
+.vector
+{
+    position: absolute;
+    top: 36.3em;
+    margin-left:13.5em;
+
+}
+
+.info
+{
+    position: absolute;
+    top: 26.5em;
+    margin-left:12em;
+    font-size: 20px;
+    font-family: 'Inter';
+    font-style: normal;
+
+}
+
+/*
+.muneco
+{
+    position: absolute;
+    width:20%;
+    right: 9em;
+    top: 14em;
+}
+
+*/
+
+.mensaje-result
+{
+    display: block;
+    background-color: white;
+    background-repeat: no-repeat;
+    background-image: url(Imagenes/Muñeco.png);
+    background-size:contain;
+    background-position: 50% 50%; 
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border: none;
+    border-radius: 24px;
+    padding: 30px 10px;
+    color: #0A3871;
+    font-size: 20px;
+    position: fixed;
+
+    right: 6em;
+    bottom: 2em;
+    width: 22%;
+    height: 80%;
+}
+
+.btns
+{
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    padding: 0px;
+    gap: 24px;
+        
+    position: absolute;
+    
+    left: 265px;
+    top: 620px;
+}
+
+.btn-encrip
+{
+    display: flex;
+    align-items:center;
+    padding: 20px 100px;
+    background: #0A3871;
+    color: white;
+    font-size: 20px;
+    border-radius: 24px;
+
+    cursor: pointer;
+}
+
+.btn-desencrip
+{
+    display: flex;
+    align-items:center;
+    padding: 20px 92px;
+    background: #D8DFE8;
+    color:#0A3871;
+    font-size: 20px;
+    border-radius: 24px;
+
+    cursor: pointer;
+}
+
+.btn-encrip:is(:hover, :focus)
+{
+    background:#0b458c;
+    transform: translateY(-2px);
+    outline-offset: 3px;
+
+}
+
+.btn-desencrip:hover
+{
+    background: #c9d7e9;
+    transform: translateY(-2px);
+    outline-offset: 3px;
+
+}
+
+.copiar
+{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    position: absolute;
+    padding: 20px 90px;
+    left: 1130px;
+    top: 600px;
+    border: 1px solid #0A3871;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: 'Inter';
+    font-weight: bold;
+    font-size: 15px;
+    color: #0A3871;
+}
+
+.copiar:hover
+    {
+        background: #c9d7e9;
+        transform: translateY(-2px);
+    }
+
+/*Queries para tablet */
+@media  screen and (min-width:767px) and  (max-width:1023px) {
+
+    .logo
+    {
+        display: flex;
+        width: 20%;
+        margin: 10px 10px;
+    }
+
+    .Text
+    {
+        width: 75%;
+        height: 40%;
+        margin: 5em 20px;
+        font-size: 35px;
+    }
+
+    .vector
+    {
+        position: absolute;
+        top: 45em;
+        margin-left:7em;
+
+    }
+    .info
+    {
+        position: absolute;
+        top: 33.5em;
+        margin-left:7em;
+        font-size: 20px;
+        font-family: 'Inter';
+        font-style: normal;
+
+    }
+    
+    .btns
+    {
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        align-items:center;
+        padding: 0px;
+        gap: 24px;
+        left: 90px;
+        top: 48em;
+    }
+
+    .mensaje-result
+    {
+        left: 4em;
+        top: 43em;
+        width:80%;
+        height: 20%;
+        display: block;
+
+        background-color: rgb(255, 255, 255);
+        padding: 20px 10px;
+        font-size: 22px;
+        background-image: none;
+        box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+        
+        border: none;
+        border-radius: 24px;
+
+        
+        margin: 15px 0;
+        color: #0A3871;
+        font-size: 20px;
+        position: fixed;
+    }
+
+    .copiar
+    {
+        position: absolute;
+        border-radius: 15px;
+        left: 8em;
+      
+        top: 45em;
+        margin: 8em 0;
+        padding: 20px 200px;
+        font-size: 20px;
+    }
+
+    
+    
+    
+}
